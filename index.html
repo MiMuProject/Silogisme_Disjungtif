@@ -1,0 +1,208 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentasi: Silogisme Disjungtif</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Menggunakan gambar sebagai latar belakang */
+            background: url('https://i.pinimg.com/736x/d0/5e/d3/d05ed3772ab9775bc5ddb41e7d723dbd.jpg') no-repeat center center fixed;
+            background-size: cover; /* Memastikan gambar menutupi seluruh area */
+            color: #334155; /* Dark slate gray text */
+            line-height: 1.6;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.9); /* Sedikit transparan agar background terlihat */
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05); /* Stronger shadow */
+            padding: 2rem; /* Reduced padding from 2.5rem */
+            margin-bottom: 2rem; /* Reduced margin from 2.5rem */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 20px 30px -8px rgba(0, 0, 0, 0.15), 0 10px 15px -7px rgba(0, 0, 0, 0.08); /* Enhanced shadow on hover */
+        }
+        .header {
+            background: linear-gradient(to right, #6366f1, #8b5cf6); /* Gradient for header */
+            color: #ffffff;
+            padding: 1.5rem; /* Reduced padding from 2rem */
+            border-radius: 1.5rem; /* More rounded corners */
+            margin-bottom: 2rem; /* Reduced margin from 2.5rem */
+            text-align: center;
+            box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4); /* Shadow for header */
+        }
+        .example-box {
+            background-color: rgba(224, 242, 254, 0.9); /* Lighter blue for examples, slightly transparent */
+            border-left: 6px solid #6366f1; /* Thicker indigo border */
+            padding: 1rem; /* Reduced padding from 1.5rem */
+            margin-top: 1rem; /* Reduced margin from 1.5rem */
+            border-radius: 0.75rem;
+            font-style: italic;
+            color: #475569; /* Slightly darker text for examples */
+        }
+        .image-text-box {
+            background-color: rgba(240, 249, 255, 0.9); /* Very light blue for image text, slightly transparent */
+            border: 1px solid #bfdbfe; /* Light blue border */
+            padding: 1rem; /* Reduced padding from 1.5rem */
+            margin-top: 0.75rem; /* Reduced margin from 1rem */
+            border-radius: 0.75rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            white-space: pre-wrap; /* Preserve whitespace and line breaks */
+            word-wrap: break-word; /* Break long words */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for image text boxes */
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem; /* More gap between images */
+            margin-top: 2rem;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .text-indigo-700 {
+            color: #4338ca; /* Deeper indigo for headings */
+        }
+        pre {
+            font-family: 'Inter', sans-serif; /* Ensure preformatted text uses Inter */
+            background-color: rgba(248, 250, 252, 0.9); /* Very light gray for preformatted code, slightly transparent */
+            padding: 0.5rem; /* Already small, keeping it */
+            border-radius: 0.5rem;
+            border: 1px dashed #cbd5e1;
+            overflow-x: auto; /* Allow horizontal scrolling for long lines */
+            display: inline-block; /* Make it fit content width */
+            max-width: 100%; /* Ensure it doesn't overflow parent */
+            text-align: center; /* Center the text within the pre block */
+        }
+    </style>
+</head>
+<body>
+    <div class="max-w-4xl mx-auto p-4 md:p-8">
+        <header class="header">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-2">Silogisme Disjungtif</h1>
+            <p class="text-base sm:text-lg lg:text-xl">Sebuah Presentasi tentang Penalaran Logika</p>
+        </header>
+
+        <section class="card p-6 md:p-10">
+            <h2 class="text-2xl font-bold mb-4 text-indigo-700">Apa itu Silogisme Disjungtif?</h2>
+            <p class="mb-4 text-justify">Silogisme disjungtif adalah silogisme yang premis mayornya merupakan keputusan disjungtif, sedangkan premis minornya bersifat kategorik yang mengakui atau mengingkari salah satu alternatif yang disebut oleh premis mayor. Seperti pada silogisme hipotetik, istilah premis mayor dan premis minor adalah secara analog bukan yang semestinya.</p>
+            <p class="mb-4 text-justify">Silogisme disjungtif merupakan salah satu bentuk penalaran logika yang menggunakan premis berupa pernyataan disjungsi (pilihan: "atau").</p>
+        </section>
+
+        <section class="card p-6 md:p-10">
+            <h2 class="text-2xl font-bold mb-4 text-indigo-700">Bentuk Umum</h2>
+            <p class="mb-4 text-justify">Bentuk umum silogisme disjungtif:</p>
+            <div class="example-box">
+                <p class="font-semibold text-justify">Premis 1 (disjungsi): A atau B</p>
+                <p class="font-semibold text-justify">Premis 2: Bukan A (atau bukan B)</p>
+                <p class="font-semibold text-justify">Kesimpulan: Maka B (atau A)</p>
+            </div>
+            <p class="mt-4 text-justify">Contoh:</p>
+            <div class="example-box">
+                <p class="text-justify">Premis 1: Siswa belajar di rumah atau di perpustakaan.</p>
+                <p class="text-justify">Premis 2: Siswa tidak belajar di rumah.</p>
+                <p class="text-justify">Kesimpulan: Maka siswa belajar di perpustakaan.</p>
+            </div>
+        </section>
+
+        <section class="card p-6 md:p-10">
+            <h2 class="text-2xl font-bold mb-4 text-indigo-700">Dua Macam Silogisme Disjungtif</h2>
+            <p class="mb-2 text-justify">Silogisme ini ada dua macam yaitu:</p>
+
+            <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-700">a. Silogisme disjungtif dalam arti sempit</h3>
+            <p class="mb-2 text-justify">Berarti mayornya mempunyai alternatif kontradiktif.</p>
+            <div class="example-box">
+                <p class="text-justify">Contoh:</p>
+                <p class="text-justify">Heri jujur atau berbohong.(premis1)</p>
+                <p class="text-justify">Ternyata Heri berbohong.(premis2)</p>
+                <p class="text-justify">Ia tidak jujur (konklusi).</p>
+            </div>
+
+            <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-700">b. Silogisme disjungtif dalam arti luas</h3>
+            <p class="mb-2 text-justify">Berarti premis mayornya mempunyai alternatif bukan kontradiktif.</p>
+            <div class="example-box">
+                <p class="text-justify">Contoh:</p>
+                <p class="text-justify">Hasan di rumah atau di pasar.(premis1)</p>
+                <p class="text-justify">Ternyata tidak di rumah.(premis2)</p>
+                <p class="text-justify">Hasan di pasar (konklusi).</p>
+            </div>
+        </section>
+
+        <section class="card p-6 md:p-10">
+            <h2 class="text-2xl font-bold mb-4 text-indigo-700">Validitas Silogisme Disjungtif</h2>
+            <p class="mb-4 text-justify">Silogisme disjungtif hanya valid jika digunakan dengan "atau" dalam arti eksklusif (hanya satu pilihan yang benar). Jika "atau" digunakan dalam arti inklusif (bisa dua-duanya), maka kesimpulannya tidak pasti.</p>
+        </section>
+
+        <section class="card p-6 md:p-10">
+            <h2 class="text-2xl font-bold mb-4 text-indigo-700">Perbandingan dengan Silogisme Konjungtif</h2>
+            <p class="mb-4 text-justify">Silogisme Konjungtif adalah silogisme yang mempunyai premis mayor berbentuk proposisi konjungtif (dan), sementara premis minor dan kesimpulannya berupa proposisi kategoris. Proposisi konjungtif memiliki dua predikat yang tidak mungkin memiliki kebenaran sama pada saat yang bersamaan.</p>
+            <div class="example-box">
+                <p class="text-justify">Contoh 1:</p>
+                <p class="text-justify">Air tidak dapat dirasakan panas dan dingin pada saat yang bersamaan</p>
+                <p class="text-justify">Air ini dingin</p>
+                <p class="text-justify">Jadi, air ini tidak panas</p>
+            </div>
+        </section>
+
+        <section class="card p-6 md:p-10">
+            <h2 class="text-2xl font-bold mb-4 text-indigo-700">Contoh dan Kaidah </h2>
+            <div class="image-text-box">
+                <p class="font-bold text-justify">Contoh</p>
+                <p class="mb-2 text-justify">Inferensi berikut :</p>
+                <p class="ml-4 text-justify">" Saya belajar dengan giat atau saya menikah tahun depan .</p>
+                <p class="ml-4 text-justify">Saya tidak belajar dengan giat . Karena itu , saya menikah tahun depan . "</p>
+                <p class="mt-4 mb-2 text-justify">menggunakan kaidah silogisme disjungtif , atau dapat ditulis dengan cara :</p>
+                <p class="ml-8 text-justify">Saya belajar dengan giat atau saya menikah tahun depan .</p>
+                <p class="ml-8 text-justify">Saya tidak belajar dengan giat .</p>
+                <p class="ml-8 text-justify">___________________________</p>
+                <p class="ml-8 text-justify">∴ Saya menikah tahun depan .</p>
+            </div>
+
+            <div class="image-text-box">
+                <p class="font-bold text-justify">Kaidah Silogisme Disjungtif</p>
+                <p class="mb-2 text-justify">Kaidah ini didasarkan pada tautologi [(p V q) ∧ ~p] → q. Kaidah silogisme disjungtif ditulis dengan cara :</p>
+                <pre class="text-lg">
+p V q
+~p
+_________
+∴q
+                </pre>
+                <p class="text-right text-sm"></p>
+                <p class="text-sm"></p>
+            </div>
+
+            <div class="image-text-box">
+                <p class="font-bold text-justify">Prinsip Silogisme Disjungtif</p>
+                <p class="mb-2 text-justify">Prinsip dasar Silogisme Disjungtif adalah apabila kita dihadapkan pada satu diantara dua pilihan ( A atau B ) . Jika tidak memilih A maka pilihan yang mungkin adalah B .</p>
+                <p class="mb-2 text-justify">Hal ini sering dijumpai dalam kehidupan sehari-hari , misal jika seseorang ditanyai penjual di warung , " kamu minum es jeruk atau es teh ? " . Pembeli memilih salah satu , karena ia tidak suka jeruk , pasti ia memilih es teh .</p>
+                <p class="mb-2 text-justify">Bentuk dari silogisme disjungtif :</p>
+                <pre class="text-lg">
+p V q
+~p
+_____
+q
+                </pre>
+                <p class="mt-4 text-justify">Contoh :</p>
+                <p class="text-justify">Kunci kamarku ada di sakuku atau tertinggal di rumah</p>
+                <p class="text-justify">Kunci kamarku tidak ada di sakuku</p>
+                <p class="text-justify">____________________________</p>
+                <p class="text-justify">Kunci kamarku tertinggal di rumah</p>
+            </div>
+        </section>
+
+        <footer class="text-center font-bold text-white text-sm mt-8 pb-4">
+            <p>© 2025 Presentasi Silogisme Disjungtif. Kelompok 4, Imam, Alfarizi, Cindy, Giska.</p>
+        </footer>
+    </div>
+</body>
+</html>
